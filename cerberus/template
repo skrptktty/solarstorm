@@ -7,5 +7,3 @@
 
 /* Enable POSIX1.2008 support */
 #define _XOPEN_SOURCE 700
-
-#include <cerh/defs.h>
