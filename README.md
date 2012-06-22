@@ -19,7 +19,8 @@ necessary.
 2: Full POSIX 1.2008 compliance is necessary - and if a new release
 of the POSIX compliance comes out before the release it shall be
 converted to this new release.  The goal is to be fully POSIX
-compliant.
+compliant. Link to POSIX 1.2008 ::
+<http://pubs.opengroup.org/onlinepubs/9699919799/nframe.html>
 
 3: A new stdlib structure is needed to be POSIX compliant.  It should
 be based on former stdlibs such as newlib however it should retire
