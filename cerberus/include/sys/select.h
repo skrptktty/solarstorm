@@ -4,3 +4,8 @@
    directory */
 
 /* Arrogant Penguin - 06222012 */
+
+#ifndef _SYS_SELECT_H
+#define _SYS_SELECT_H
+
+#endif /* sys/select.h */
