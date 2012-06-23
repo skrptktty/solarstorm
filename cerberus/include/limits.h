@@ -20,7 +20,7 @@
 #define AIO_MAX _POSIX_AIO_MAX
 /*
    Maximum amount by which a process can decrease its asyncronous
-   I/O priority level from its own scheduling priority 
+   I/O priority level from its own scheduling priority
 */
 #define AIO_PRIO_DELTA_MAX 0
 /*
@@ -300,7 +300,7 @@
 /*
    The resolution of the CLOCK_REALTIME clock, in nanoseconds
 */
-#define _POSIX_CLOCKRES_MIN 20 000 000
+#define _POSIX_CLOCKRES_MIN 20000000
 
 /* The following is the minimum values restricted by POSIX */
 
@@ -349,35 +349,44 @@
 */
 #define _POSIX_MAX_INPUT 255
 /*
-   The number of message queues that can be open for a single process.
+   The number of message queues that can be open for a single
+   process.
 */
 #define _POSIX _POSIX_MQ_OPEN_MAX 8
 /*
-   The maximum number of message priorities supported by the implementation.
+   The maximum number of message priorities supported by the
+   implementation.
 */
 #define _POSIX _POSIX_MQ_PRIO_MAX 32
 /*
-   Maximum number of bytes in a filename (not including the terminating null).
+   Maximum number of bytes in a filename (not including the
+   terminating null).
 */
 #define _POSIX _POSIX_NAME_MAX 14
 /*
-   Maximum number of simultaneous supplementary group IDs per process.
+   Maximum number of simultaneous supplementary group IDs per
+   process.
 */
 #define _POSIX _POSIX_NGROUPS_MAX 8
 /*
-   Maximum number of files that one process can have open at any one time.
+   Maximum number of files that one process can have open at any one
+   time.
 */
 #define _POSIX _POSIX_OPEN_MAX 20
 /*
-   Minimum number the implementation will accept as the maximum number of bytes in a pathname.
+   Minimum number the implementation will accept as the maximum
+   number of bytes in a pathname.
 */
 #define _POSIX _POSIX_PATH_MAX 256
 /*
-   Maximum number of bytes that is guaranteed to be atomic when writing to a pipe.
+   Maximum number of bytes that is guaranteed to be atomic when
+   writing to a pipe.
 */
 #define _POSIX _POSIX_PIPE_BUF 512
 /*
-   The number of repeated occurrences of a BRE permitted by the regexec() and regcomp() functions when using the interval notation {\(m,n\}; see BREs Matching Multiple Characters .
+   The number of repeated occurrences of a BRE permitted by the
+   regexec() and regcomp() functions when using the interval notation
+   {\(m,n\}; see BREs Matching Multiple Characters .
 */
 #define _POSIX _POSIX_RE_DUP_MAX 255
 /*
@@ -393,7 +402,8 @@
 */
 #define _POSIX _POSIX_SEM_VALUE_MAX 32767
 /*
-   The number of queued signals that a process may send and have pending at the receiver(s) at any time.
+   The number of queued signals that a process may send and have
+   pending at the receiver(s) at any time.
 */
 #define _POSIX _POSIX_SIGQUEUE_MAX 32
 /*
@@ -401,7 +411,8 @@
 */
 #define _POSIX _POSIX_SSIZE_MAX 32767
 /*
-   The number of replenishment operations that may be simultaneously pending for a particular sporadic server scheduler.
+   The number of replenishment operations that may be
+   simultaneously pending for a particular sporadic server scheduler.
 */
 #define _POSIX _POSIX_SS_REPL_MAX 4
 /*
@@ -413,11 +424,13 @@
 */
 #define _POSIX _POSIX_SYMLINK_MAX 255
 /*
-   The number of symbolic links that can be traversed in the resolution of a pathname in the absence of a loop.
+   The number of symbolic links that can be traversed in the
+   resolution of a pathname in the absence of a loop.
 */
 #define _POSIX _POSIX_SYMLOOP_MAX 8
 /*
-   The number of attempts made to destroy a thread's thread-specific data values on thread exit.
+   The number of attempts made to destroy a thread's thread-specific
+   data values on thread exit.
 */
 #define _POSIX _POSIX_THREAD_DESTRUCTOR_ITERATIONS 4
 /*
@@ -433,27 +446,34 @@
 */
 #define _POSIX _POSIX_TIMER_MAX 32
 /*
-   The length in bytes of a trace event name (not including the terminating null).
+   The length in bytes of a trace event name (not including the
+   terminating null).
 */
 #define _POSIX _POSIX_TRACE_EVENT_NAME_MAX 30
 /*
-   The length in bytes of a trace generation version string or a trace stream name (not including the terminating null).
+   The length in bytes of a trace generation version string or a
+   trace stream name (not including the terminating null).
 */
 #define _POSIX _POSIX_TRACE_NAME_MAX 8
 /*
-   The number of trace streams that may simultaneously exist in the system.
+   The number of trace streams that may simultaneously exist in the
+   system.
 */
 #define _POSIX _POSIX_TRACE_SYS_MAX 8
 /*
-   The number of user trace event type identifiers that may simultaneously exist in a traced process, including the predefined user trace event POSIX_TRACE_UNNAMED_USER_EVENT.
+   The number of user trace event type identifiers that may
+   simultaneously exist in a traced process, including the predefined
+   user trace event POSIX_TRACE_UNNAMED_USER_EVENT.
 */
 #define _POSIX _POSIX_TRACE_USER_EVENT_MAX 32
 /*
-   The size of the storage required for a terminal device name, in bytes (including the terminating null).
+   The size of the storage required for a terminal device name, in
+   bytes (including the terminating null).
 */
 #define _POSIX _POSIX_TTY_NAME_MAX 9
 /*
-   Maximum number of bytes supported for the name of a timezone (not of the TZ variable).
+   Maximum number of bytes supported for the name of a timezone (not
+   of the TZ variable).
 */
 #define _POSIX _POSIX_TZNAME_MAX 6
 /*
@@ -461,7 +481,7 @@
 */
 #define _POSIX2_BC_BASE_MAX 99
 /*
-   Maximum number of elements permitted in an array by the bc utility.
+   Maximum number of elements permitted in an array by the bc utility
 */
 #define _POSIX2_BC_DIM_MAX 2048
 /*
@@ -477,149 +497,161 @@
 */
 #define _POSIX2_CHARCLASS_NAME_MAX 14
 /*
-   Maximum number of weights that can be assigned to an entry of the LC_COLLATE order keyword in the locale definition file; see Locale .
+   Maximum number of weights that can be assigned to an entry of the
+   LC_COLLATE order keyword in the locale definition file; see Locale
 */
 #define _POSIX2_COLL_WEIGHTS_MAX 2
 /*
-   Maximum number of expressions that can be nested within parentheses by the expr utility.
+   Maximum number of expressions that can be nested within
+   parentheses by the expr utility.
 */
 #define _POSIX2_EXPR_NEST_MAX 32
 /*
-   Unless otherwise noted, the maximum length, in bytes, of a utility's input line (either standard input or another file), when the utility is described as processing text files. The length includes room for the trailing <newline>.
+   Unless otherwise noted, the maximum length, in bytes, of a
+   utility's input line (either standard input or another file), when
+   the utility is described as processing text files. The length
+   includes room for the trailing <newline>.
 */
 #define _POSIX2_LINE_MAX 2048
 /*
-   Maximum number of repeated occurrences of a regular expression permitted when using the interval notation \{m,n\}; see Regular Expressions .
+   Maximum number of repeated occurrences of a regular expression
+   permitted when using the interval notation \{m,n\}; see Regular
+   Expressions .
 */
 #define _POSIX2_RE_DUP_MAX 255
 /*
-   Maximum number of iovec structures that one process has available for use with readv() or writev().
+   Maximum number of iovec structures that one process has available
+   for use with readv() or writev().
 */
 #define _XOPEN_IOV_MAX 16
 /*
-   Maximum number of bytes in a filename (not including the terminating null).
+   Maximum number of bytes in a filename (not including the
+   terminating null).
 */
 #define _XOPEN_NAME_MAX 255
 /*
-   Minimum number the implementation will accept as the maximum number of bytes in a pathname.
+   Minimum number the implementation will accept as the maximum
+   number of bytes in a pathname.
 */
 #define _XOPEN_PATH_MAX 1024
 
 /* Numerical Limits - as defined by POSIX /*
 
 /*
-Number of bits in a type char.
+   Number of bits in a type char.
 */
 #define CHAR_BIT 8
 /*
-Maximum value for an object of type char.
+   Maximum value for an object of type char.
 */
 #define CHAR_MAX SCHAR_MAX
 /*
-Minimum value for an object of type char.
+   Minimum value for an object of type char.
 */
 #define CHAR_MIN SCHAR_MIN
 /*
-Maximum value for an object of type int.
+   Maximum value for an object of type int.
 */
 #define INT_MAX 2147483647
 /*
-Minimum value for an object of type int.
+   Minimum value for an object of type int.
 */
 #define INT_MIN -2147483647
 /*
-Maximum value for an object of type long long.
+   Maximum value for an object of type long long.
 */
 #define LLONG_MAX +9223372036854775807
 /*
-Minimum value for an object of type long long.
+   Minimum value for an object of type long long.
 */
 #define LLONG_MIN -9223372036854775807
 /*
-Number of bits in an object of type long.
+   Number of bits in an object of type long.
 */
 #define LONG_BIT 32
 /*
-Maximum value for an object of type long.
+   Maximum value for an object of type long.
 */
 #define LONG_MAX 2147483647
 /*
-Minimum value for an object of type long.
+   Minimum value for an object of type long.
 */
 #define LONG_MIN -2147483647
 /*
-Maximum number of bytes in a character, for any supported locale.
+   Maximum number of bytes in a character, for any suppocrted locale.
 */
 #define MB_LEN_MAX 1
 /*
-Maximum value for an object of type signed char.
+   Maximum value for an object of type signed char.
 */
 #define SCHAR_MAX 127
 /*
-Minimum value for an object of type signed char.
+   Minimum value for an object of type signed char.
 */
 #define SCHAR_MIN -128
 /*
-Maximum value for an object of type short.
+   Maximum value for an object of type short.
 */
 #define SHRT_MAX 32767
 /*
-Minimum value for an object of type short.
+   Minimum value for an object of type short.
 */
 #define SHRT_MIN -32767
 /*
-Maximum value for an object of type ssize_t.
+   Maximum value for an object of type ssize_t.
 */
 #define SSIZE_MAX _POSIX_SSIZE_MAX
 /*
-Maximum value for an object of type unsigned char.
+   Maximum value for an object of type unsigned char.
 */
 #define UCHAR_MAX 255
 /*
-Maximum value for an object of type unsigned.
+   Maximum value for an object of type unsigned.
 */
 #define UINT_MAX 4294967295
 /*
-Maximum value for an object of type unsigned long long.
+   Maximum value for an object of type unsigned long long.
 */
 #define ULLONG_MAX 18446744073709551615
 /*
-Maximum value for an object of type unsigned long.
+   Maximum value for an object of type unsigned long.
 */
 #define ULONG_MAX 4294967295
 /*
-Maximum value for an object of type unsigned short.
+   Maximum value for an object of type unsigned short.
 */
 #define USHRT_MAX 65535
 /*
-Number of bits in an object of type int.
+   Number of bits in an object of type int.
 */
 #define WORD_BIT 32
 
 /* Other Invariant Values /*
 
 /*
-Maximum value of n in conversion specifications using the "%n$" sequence in calls to the printf() and scanf() families of functions.
+   Maximum value of n in conversion specifications using the "%n$"
+   sequence in calls to the printf() and scanf() families of
+   functions.
 */
 #define NL_ARGMAX 9
 /*
-Maximum number of bytes in a LANG name.
+   Maximum number of bytes in a LANG name.
 */
 #define NL_LANGMAX 14 /*XSI Specification /*
 /*
-Maximum message number.
+   Maximum message number.
 */
 #define NL_MSGMAX 32767
 /*
-Maximum set number.
+   Maximum set number.
 */
 #define NL_SETMAX 255
 /*
-Maximum number of bytes in a message string.
+   Maximum number of bytes in a message string.
 */
 #define NL_TEXTMAX _POSIX2_LINE_MAX
 /*
-Default process priority.
+   Default process priority.
 */
 #define NZERO 20 /* XSI Specification */
 
