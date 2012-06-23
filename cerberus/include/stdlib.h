@@ -4,11 +4,45 @@
    directory. */
 
 /* Created :: Arrogant Penguin - 06223012 */
+/* Last Edit :: Arrogant Penguin - 06232012 */
 
 #ifndef _STDLIB_H
 #define _STDLIB_H
 
 #include <stddef.h>
+
+/* Macros required by POSIX 1.2008 */
+
+/*
+   EXIT_FAILURE ::
+   Unsuccessful termination for exit(); evaluates to non-zero
+*/
+/*
+   EXIT_SUCCESS ::
+   Successful termination for exit(); evaluates to zero
+*/
+/*
+   RAND_MAX ::
+   Maximum value returned to rand(); at least 32767
+*/
+/*
+   MB_CURR_MAX ::
+   Maximum number of bytes in a charcter specified by the current
+   locale (category LC_CTYPE)
+*/
+/*
+   NULL ::
+   As defined by stddef.h
+*/
+
+/*
+   Typedefs :: << The first three are already in the next section. >>
+   <div_t :: Structure type returned by the div() function>
+   <ldiv_t :: Structure type returned by the ldiv() function>
+   <lldiv_t :: Structure type returned by the lldiv() funtion>
+   size_t :: As defined by stddef.h
+   wchar_t :: As defined by stddef.h
+*/
 
 /* Taken directly from POSIX 1.2008 */
 
