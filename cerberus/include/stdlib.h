@@ -112,4 +112,16 @@
 #define size_t		wcstombs(char *restrict, const wchar_t *restrict, size_t);
 #define int		wctomb(char *, wchar_t);
 
+/*
+   Need to define the following as defined by <sys/wait.h> ::
+   WEXITSTATUS
+   WIFEXITED
+   WIFSIGNALED
+   WIFSTOPPED
+   WNOHANG
+   WSTOPSIG
+   WTERMSIG
+   WUNTRACED
+*/
+
 #endif /* stdlib.h */
