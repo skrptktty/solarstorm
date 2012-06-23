@@ -33,3 +33,6 @@ be chosen to use for this.
 5: The system shall strive to be easily ported to, for this reason I
 have chosen to implement certain features that are optional within
 the POSIX specification.
+
+6: The goal beyond POSIX and XSI specification compliance is fully
+UTF8 compatible.
